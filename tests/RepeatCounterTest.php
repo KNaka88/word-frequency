@@ -89,6 +89,25 @@
             $this->assertEquals(2, $result);
         }
 
+        //TEST5:
+            //It finds multiple matches
+            //This will check if word matches count is working through out the sentence
+                //Sentence: hello world Hello
+                //Input: hello
+                //Output: 2
+        function test_CountRepeats_test5()
+        {
+            //Arrange
+            $sentence_input = "hello world Hello";
+            $word_input = "hello";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+
+            //Act
+            $result = $test_countRepeats->countRepeats();
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
 
 
 
@@ -105,12 +124,7 @@
 
 
 
-//TEST5:
-    //It finds multiple matches
-    //This will check if word matches count is working through out the sentence
-        //Sentence: hello world hello
-        //Input: hello
-        //Output: 2
+
 
 //TEST6:
     //It ignores ", . ! ?"
