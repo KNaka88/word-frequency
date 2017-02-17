@@ -15,7 +15,7 @@
 | It will count the number of matching | Sentence: "Good Morning Portland! Good Morning World!", Word:"Morning" | Result: "2" |
 | It will check only perfect matching word| Sentence: "I am fine", Word: "define" | Result: "0" |
 | It is case incensitive| Sentence: "Great Adventure", Word: "adventure" | Result: "1"|
-| It ignores ". , ! ?" | Sentence: "Best Portland Restaurant!!" Word: Restaurant  | Result: "1" |
+| It ignores ". , ! ?" | Sentence: "Best Portland Restaurant!!" Word: "Restaurant"  | Result: "1" |
 
 ## Setup/Installation Requirements
 * Clone this repository.
