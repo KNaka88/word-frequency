@@ -10,15 +10,12 @@
 
 ## Specifications
 
---------WRITE SPEC!!------------
-
-
-
-
-
-
-
-
+|Behavior|Input|Output|
+|--------|-----|------|
+| It will count the number of matching | Sentence: "Good Morning Portland! Good Morning World!", Word:"Morning" | Result: "2" |
+| It will check only perfect matching word| Sentence: "I am fine", Word: "define" | Result: "0" |
+| It is case incensitive| Sentence: "Great Adventure", Word: "adventure" | Result: "1"|
+| It ignores ". , ! ?" | Sentence: "Best Portland Restaurant!!" Word: Restaurant  | Result: "1" |
 
 ## Setup/Installation Requirements
 * Clone this repository.
@@ -27,14 +24,14 @@
 
 * Install the Composer at the top level of project directory to add dependencies to this projects.
 
-if you are not sure how to install composer and add dependency, [see this link](https://www.learnhowtoprogram.com/php/object-oriented-php/composer).
+#####if you are not sure how to install composer and add dependency, [see this link](https://www.learnhowtoprogram.com/php/object-oriented-php/composer).
 
 
 * Start your server inside of web folder, using localhost:8000
 
 * Open URL: http://localhost:8000/
 
-if you are not sure how to setup localhost server, [see this link](https://www.learnhowtoprogram.com/php/php-basics/meet-the-server).
+#####if you are not sure how to setup localhost server, [see this link](https://www.learnhowtoprogram.com/php/php-basics/meet-the-server).
 
 ## Known Bugs
 * I confirmed this program is successfully running under the PHP 5.6.16, using Mac OS X 10.11.6.
