@@ -1,13 +1,31 @@
 <?php
     require_once "src/RepeatCounter.php";
 
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
+    {
+        //TEST1:
+          //It finds only full matches case
+          //This will check if word matches working
+          //Sentence: hello
+          //Input: helloo
+          //Output: 0
+        function test_CountRepeats_test1()
+        {
+            //Arrange
+            $sentence_input = "hello";
+            $word_input = "helloo";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
 
-//TEST1:
-    //It finds only full matches case
-    //This will check if word matches working
-        //Sentence: hello
-        //Input: helloo
-        //Output: 0
+            //Act
+            $result = $test_countRepeats->countRepeats();
+
+            //Assert
+            $this->assertEquals( 0, $result);
+        }
+    }
+
+
+
 
 //TEST2:
     //If finds only full matches case
