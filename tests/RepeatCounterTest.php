@@ -69,6 +69,27 @@
         }
 
 
+        //TEST4:
+            //It finds muliple matches
+            //This will check if word matches count is working
+                //Sentence: hello hello world
+                //Input: hello
+                //Output: 2
+        function test_CountRepeats_test4()
+        {
+            //Arrange
+            $sentence_input = "hello hello world";
+            $word_input = "hello";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+
+            //Act
+            $result = $test_countRepeats->countRepeats();
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+
+
 
 
 
@@ -82,12 +103,7 @@
 
 
 
-//TEST4:
-    //It finds muliple matches
-    //This will check if word matches count is working
-        //Sentence: hello hello world
-        //Input: hello
-        //Output: 2
+
 
 //TEST5:
     //It finds multiple matches
