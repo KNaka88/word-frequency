@@ -9,10 +9,13 @@
     ));
 
     $app->get("/", function() use ($app) {
-
-
-
         return $app['twig']->render('word_frequency_checker.html.twig');
+    });
+
+
+    $app->post("/result", function() use ($app) {
+        $new_repeat_counter = new RepeatCounter($_POST['sentence'], $_POST['word']);
+        return $app['twig']->render('result.html.twig', array('result' => $new_repeat_counter));
     });
 
     return $app;

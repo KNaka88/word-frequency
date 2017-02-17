@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Result</title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Result</h1>
+      <p>You Typed Sentence: "{{result.getSentence}}".</p>
+      <p>You Typed Word: "{{result.getWord}}".</p>
+      <p>We found "{{result.getWord}}" in the sentence {{result.countRepeats}} times.</p>
+      <a href='/'><button class='btn btn-info btn-block'>Back to top</button></a>
+    </div>
+  </body>
+</html>
