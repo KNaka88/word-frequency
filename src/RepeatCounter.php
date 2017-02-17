@@ -32,24 +32,28 @@
 
         function countRepeats()
         {
-          //1. Explode the sentence into array
-          $explode_sentence = explode(" ", $this->sentence);
-          var_dump($explode_sentence);
+          //make case incensitive
+          $lower_str_sentence = strtolower($this->sentence);
+          $lower_str_word = strtolower($this->word);
 
-          //2. loop through the array and count up the matching result
+
+          //Explode the sentence into array
+          $explode_sentence = explode(" ", $lower_str_sentence);
+
+
+          //Loop through the array and count up the matching result
           $count_match = 0;
 
           for($i=0; $i<count($explode_sentence); $i++) {
-              if($explode_sentence[$i] == $this->word) {
+              if($explode_sentence[$i] == $lower_str_word) {
                   $count_match++;
               }
           }
-          //3. return the result
+
+          //return the result
           return $count_match;
 
-          //4. make case incensitive
-
-          //5. trim ". , ! ?"
+          //trim ". , ! ?"
         }
 
 

@@ -48,6 +48,27 @@
         }
 
 
+        //TEST3:
+            //It is case incensitive
+            //This will check if word matches working with case incensitive
+                //Sentence: hello
+                //Input: heLLo
+                //Output: 1
+        function test_CountRepeats_test3()
+        {
+            //Arrange
+            $sentence_input = "hello";
+            $word_input = "heLLo";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+
+            //Act
+            $result = $test_countRepeats->countRepeats();
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
+
 
 
 
@@ -58,12 +79,7 @@
 
 
 
-//TEST3:
-    //It is case incensitive
-    //This will check if word matches working with case incensitive
-        //Sentence: hello
-        //Input: heLLo
-        //Output: 1
+
 
 
 //TEST4:
