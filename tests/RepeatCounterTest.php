@@ -109,26 +109,27 @@
             $this->assertEquals(2, $result);
         }
 
+        //TEST6:
+            //It ignores ", . ! ?"
+            //This will check if word match count is working regardless of special characters
+                //Sentence: You are awesome! Because of you, I can live happily.
+                //          I cannot think of my life without you!!
+                //Input: you
+                //Output: 3
 
+            function test_CountRepeats_test6()
+            {
+                //Arrange
+                $sentence_input = "You are awesome! Because of you, I can live happily. I cannot think of my life without you!!";
+                $word_input = "you";
+                $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+
+                //Act
+                $result = $test_countRepeats->countRepeats();
+
+                //Assert
+                $this->assertEquals(3, $result);
+            }
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//TEST6:
-    //It ignores ", . ! ?"
-    //This will check if word match count is working regardless of special characters
-        //Sentence: You are awesome! Because of you, I can live happily. I cannot think of my life without you!!
-        //Input: you
-        //Output: 3

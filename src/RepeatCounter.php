@@ -45,15 +45,15 @@
           $count_match = 0;
 
           for($i=0; $i<count($explode_sentence); $i++) {
-              if($explode_sentence[$i] == $lower_str_word) {
+              //trim ". , ! ?"
+              $trimed_word = trim($explode_sentence[$i], ". , ! ?");
+
+              if($trimed_word == $lower_str_word) {
                   $count_match++;
               }
           }
-
           //return the result
           return $count_match;
-
-          //trim ". , ! ?"
         }
 
 
