@@ -3,22 +3,29 @@
   <head>
     <meta charset="utf-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Atma:400,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Word Frecuency Checker</title>
   </head>
   <body>
     <div class='container'>
-      <h1>Word Frecuency Checker</h1>
-      <form action='/result' method='post'>
-        <div class='form-group'>
-          <label for='sentence'>Please Type Sentence</label>
-          <input type='text' id='sentence' class='form-control' name='sentence' placeholder='type sentence'>
-        </div>
-        <div class='form-group'>
-          <label for='word'>Please Type Word</label>
-          <input type='text' id='word' class='form-control' name='word' placeholder='type word'>
-        </div>
-        <button type='submit' class='btn btn-primary form-control'>Let's see the result!!</button>
-      </form>
+      <div class='top-panel'>
+        <h1 class="jumbotron">Word Frecuency Checker</h1>
+        <form action='/result' method='post'>
+          <div class='form-group'>
+            <label for='sentence'>Please Type Sentence</label>
+            <input type='text' id='sentence' class='form-control input-lg' name='sentence' placeholder='type sentence'>
+          </div>
+          <div class='form-group'>
+            <label for='word'>Please Type Word</label>
+            <input type='text' id='word' class='form-control input-lg' name='word' placeholder='type word'>
+          </div>
+          <button type='submit' class='btn btn-primary form-control btn-lg'>Let's see the result!!</button>
+        </form>
+      <footer class="footer navbar-fixed-bottom">
+        <h6>Koji Nakagawa</h6>
+        <a href="https://github.com/KNaka88">Github</a>
+      </footer>
     </div>
   </body>
 </html>
