@@ -23,10 +23,6 @@
             $this->assertEquals(0, $result);
         }
 
-
-
-
-
         //TEST2:
             //If finds only full matches case
             //This will check if word matches working
@@ -117,19 +113,19 @@
                 //Input: you
                 //Output: 3
 
-            function test_CountRepeats_test6()
-            {
-                //Arrange
-                $sentence_input = "You are awesome! Because of you, I can live happily. I cannot think of my life without you!!";
-                $word_input = "you";
-                $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+        function test_CountRepeats_test6()
+        {
+            //Arrange
+            $sentence_input = "You are awesome! Because of you, I can live happily. I cannot think of my life without you!!";
+            $word_input = "you";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
 
-                //Act
-                $result = $test_countRepeats->countRepeats();
+            //Act
+            $result = $test_countRepeats->countRepeats();
 
-                //Assert
-                $this->assertEquals(3, $result);
-            }
+            //Assert
+            $this->assertEquals(3, $result);
+        }
 
 
     }
