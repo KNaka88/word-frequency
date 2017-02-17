@@ -20,19 +20,43 @@
             $result = $test_countRepeats->countRepeats();
 
             //Assert
-            $this->assertEquals( 0, $result);
+            $this->assertEquals(0, $result);
         }
+
+
+
+
+
+        //TEST2:
+            //If finds only full matches case
+            //This will check if word matches working
+                //Sentence: hello
+                //Input: hello
+                //Output: 1
+        function test_CountRepeats_test2()
+        {
+            //Arrange
+            $sentence_input = "hello";
+            $word_input = "hello";
+            $test_countRepeats = new RepeatCounter($sentence_input, $word_input);
+
+            //Act
+            $result = $test_countRepeats->countRepeats();
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
+
+
+
+
     }
 
 
 
 
-//TEST2:
-    //If finds only full matches case
-    //This will check if word matches working
-        //Sentence: hello
-        //Input: hello
-        //Output: 1
+
 
 //TEST3:
     //It is case incensitive
